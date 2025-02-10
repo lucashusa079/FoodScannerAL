@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_url"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="Imagen del producto" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Codi de barres"
+        android:textSize="12sp"
+        android:paddingTop="4dp" />
+</LinearLayout>

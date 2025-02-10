@@ -1,0 +1,81 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Tarjeta para mostrar el producto escaneado -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardProducte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="2dp"
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageProducte"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/nomProducte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom del Producte"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/marcaProducte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- Botón flotante para escanear -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnEscanejar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Escanear Producto"
+        android:layout_margin="16dp"
+        app:maxImageSize="40dp"
+        app:fabSize="normal"
+        android:onClick="iniciarEscaneig"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <!-- Barra de navegación inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "863011787719",
+    "project_id": "foodscanner-32fdf",
+    "storage_bucket": "foodscanner-32fdf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863011787719:android:37b4be523a6496f19a7fe2",
+        "android_client_info": {
+          "package_name": "org.aaron.foodscanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_D3Tn2sLmaB1dMEG7690_bv5VFvktbKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
